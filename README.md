@@ -7,6 +7,8 @@ Net Logger is a tool which helps to analize logs. It automatically updates the L
 Installation is very easy .Put this logger folder in the same directory of the log file. Then we just need to create one virtual directory in IIS / Xamp or in any other web server . Change the log filename in "settings.js" . And That's It . You are ready to use the tool.
 
 
+## Demo Link : https://sarkarnihar.in/logs/
+
 
 
 
