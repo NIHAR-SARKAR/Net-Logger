@@ -1,3 +1,3 @@
 var settings={
-    path:'../log'
+    path:'log'
 }
