@@ -29,8 +29,9 @@ $('#refresh').click(function(){
             //console.log(this.responseText);
             lineArray=response.split("\n");
             if(lastIndex!=lineArray.length){
-               var tempCount= UpdateUi(lineArray.slice(lastIndex,lineArray.length));
-                lastIndex=lineArray.length -1;
+			   var content=lineArray.slice(lastIndex,lineArray.length);
+               var tempCount= UpdateUi(content);
+                lastIndex=$.trim(content)==""?lineArray.length-1:lineArray.length;
                 logCount=logCount+tempCount;
                 $('#logCount').text(logCount);
                 lineArray=[];
